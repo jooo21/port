@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/resets.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Press+Start+2P&family=Roboto:wght@100;300;400;500;700;900&family=Iceberg&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="contents">
+        <section id="section1">
+            <div class="bg">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="sec1">
+                <div class="text-box">
+                    <h1>portfolio<br>frontend</h1>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        <section id="section2">
+
+        </section>
+        <!-- //section2 -->
+
+        <section id="section3">
+            <h2>work</h2>
+            <div class="site-wrap">
+                <div class="site">
+                    <div class="left">
+                       <div class="bro">
+                           <h3>webstandard</h3>
+                           <div><img src="" alt=""></div>
+                       </div>
+                    </div>
+                    <div class="right">
+                        <h3>site01</h3>
+                        <dl>
+                            <dt>#웹 호환성(Cross Browsing)</dt>
+                            <dd>브라우저의 종류나 버전에 상관없이 모든 사용자들이 동일하다</dd>
+                            <dt>#웹 접근성(Web Accessibility)</dt>
+                            <dd>인식의 용이성, 운용의 용이성, 이해의 용이성, 견고성,</dd>
+                            <dt>#웹표준(Web Standard)</dt>
+                            <dd>WC3규격을 준수한 사이트 입니다.</dd>
+                        </dl>
+                        <a href="#" class="btn">site view</a>
+                    </div>
+                    <div class="center">
+                        <h3>code view</h3>
+                        <div class="code"></div>
+                    </div>
+                </div>
+                <div class="site">
+                    <div class="right">22</div>
+                    <div class="left">11</div>
+                </div>
+                <div class="site">
+                    <div class="left">11</div>
+                    <div class="right">22</div>
+                </div>
+            </div>
+        </section>
+        <!-- //section3 -->
+
+        <section id="section4">
+            <div class="sec4">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </section>
+        <!-- //section4 -->
+
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </div>
+
+    <script  src="assets/js/jquery-3.6.0.js"></script>
+    <script>
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            let offset = scrollTop - $("#section4").offset().top;
+            if( scrollTop > $("#section4").offset().top ){
+                $("#section4 .sec4").css("transform","translatex(-"+offset+"px)")
+            }
+        });
+    </script>
+</body>
+</html>
+
+<!-- https://designscramble.jp/ -->
